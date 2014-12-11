@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.welthershow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        >
+        <activity
+            android:name="com.example.welthershow.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.example.welthershow.SetCityActivity"
+            android:theme="@android:style/Theme.Dialog"
+         ></activity>
+        <activity 
+            android:name="com.example.welthershow.LoadingActivity"
+            android:theme="@android:style/Theme.Dialog"
+         ></activity>
+         <activity 
+            android:name="com.example.welthershow.AboutActivity"
+            android:theme="@android:style/Theme.Dialog"
+         ></activity>
+    </application>
+
+</manifest>
